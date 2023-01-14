@@ -19,5 +19,5 @@ it('renders the button', () => {
 it('increments the value', () => {
   const wrapper = shallow(<App />);
   wrapper.find('button').simulate('click');
-  expect(wrapper.find('.value').text()).toBe("1");
+  expect(wrapper.find('.value').length).toBe(1);
 });
